@@ -18,5 +18,6 @@ def set_dac_voltage(voltage):
     bus.write_i2c_block_data(MCP4725_DEFAULT_ADDRESS, MCP4725_CMD_WRITEDAC, [high_byte, low_byte])
 
 # Set the desired output voltage
-desired_voltage = 1.8  # Example voltage (in volts)
+desired_voltage = 0.0  # Example voltage (in volts)
 set_dac_voltage(desired_voltage)
+print(desired_voltage)
