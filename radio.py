@@ -10,7 +10,7 @@ import smbus
 bus = smbus.SMBus(1) # use 1 for raspberry pi 2/3/4/5. use 0 for raspberry pi 1.
 
 # MCP4725 default address
-MCP4725_DEFAULT_ADDRESS = 0x62
+MCP4725_DEFAULT_ADDRESS = 0x60 # Usually 62
 
 # MCP4725 Command
 MCP4725_CMD_WRITEDAC = 0x40
