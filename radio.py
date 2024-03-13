@@ -17,7 +17,7 @@ MCP4725_CMD_WRITEDAC = 0x40
 
 # Function to set DAC voltage
 def set_dac_voltage(voltage):
-	dac_value = int((voltage / 3.3) * 4095 # Convert voltage to 12-bit DAC value
+	dac_value = int((voltage / 3.3) * 4095) # Convert voltage to 12-bit DAC value
 	high_byte = (dac_value >> 8) & 0xFF # high byte
 	low_byte = dac_value & 0xFF #Low byte
 
